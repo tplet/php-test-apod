@@ -1,3 +1,5 @@
+![Aperçu du rendu](screenshot.png)
+
 # Installation
 
 To use the application, it is necessary to configure the NASA API key. To do this, set the "api_key" option in the config/packages/apod.yaml file.
