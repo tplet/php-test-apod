@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block body %}
+    <div style="text-align: center;">
+        <h1>Last picture from NASA</h1>
+        {% if media is defined and media is not null %}
+            {{ media.date|date('Y-m-d') }}<br />
+            <span style="font-weight: bold;">{{ media.title }}</span><br />
+            <img src="{{ media.url }}" style="width: 400px;" /><br />
+            {{ media.explanation }}
+        {% else %}
+            <div style="font-style: italic;">
+                No picture to display for now
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

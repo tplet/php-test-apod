@@ -1,0 +1,8 @@
+# Commands
+services:
+    nasa.apod.command.build:
+        class: App\Nasa\ApodBundle\Command\BuildCommand
+        arguments:
+            $apodService: '@nasa.apod.apod.service'
+        tags:
+            - { name: 'console.command' }

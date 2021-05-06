@@ -1,0 +1,8 @@
+services:
+    App\Controller\HomeController:
+        arguments:
+            $apodService: '@nasa.apod.apod.service'
+        calls:
+            - [setContainer, ['@service_container']]
+        tags:
+            - { name: 'controller.service_arguments' }
