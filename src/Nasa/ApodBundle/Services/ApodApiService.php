@@ -6,6 +6,7 @@ namespace App\Nasa\ApodBundle\Services;
 
 use App\Nasa\ApodBundle\Factory\DtoFactoryInterface;
 use App\Nasa\ApodBundle\Model\Dto\DtoMediaInterface;
+use DateTime;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
@@ -46,14 +47,20 @@ class ApodApiService extends Client implements ApodApiServiceInterface
     /**
      * Request apod
      *
+     * @param DateTime|null $date
      * @return DtoMediaInterface|null
+     * @throws ClientExceptionInterface
+     * @throws GuzzleException
      */
-    public function requestApod(): ?DtoMediaInterface
+    public function requestApod(DateTime $date = null): ?DtoMediaInterface
     {
         $args = [
             'api_key' => $this->getApiKey(),
             'thumbs' => true,
         ];
+        if (null !== $date) {
+            $args['date'] = $date->format('Y-m-d');
+        }
 
         $request = new Request('GET', $this->getUrl() . '?' . http_build_query($args));
 

@@ -69,7 +69,7 @@ class ApodService implements ApodServiceInterface
             $apodApiService = $this->getApodApiService();
             $pictureFactory = $this->getPictureFactory();
 
-            $dtoPicture = $apodApiService->requestApod();
+            $dtoPicture = $apodApiService->requestApod($date);
             if (null !== $dtoPicture) {
                 $picture = $pictureFactory->createFromDto($dtoPicture);
 

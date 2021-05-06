@@ -5,10 +5,13 @@ namespace App\Nasa\ApodBundle\Command;
 
 
 use App\Nasa\ApodBundle\Services\ApodServiceInterface;
+use DateTime;
 use LogicException;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use function var_dump;
 
 class BuildCommand extends Command
 {
@@ -35,7 +38,8 @@ class BuildCommand extends Command
     {
         $this
             ->setName('nasa:apod:build')
-            ->setDescription("Build current day picture from NASA API")
+            ->setDescription("Build specified day picture from NASA API (use today by default)")
+            ->addOption('date', 'd', InputOption::VALUE_OPTIONAL, 'Date for picture (format: Y-m-d)', null)
         ;
     }
 
@@ -55,8 +59,14 @@ class BuildCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $date = new DateTime();
+        $dateString = $input->getOption('date');
+        if (null !== $dateString) {
+            $date = DateTime::createFromFormat('Y-m-d', $dateString);
+        }
+
         // Fetch and save picture of the current day
-        $media = $this->getApodService()->fetchAndSave();
+        $media = $this->getApodService()->fetchAndSave($date);
 
         if (null !== $media) {
             $output->writeln("Media for " . $media->getDate()->format('Y-m-d') . ' found!');
