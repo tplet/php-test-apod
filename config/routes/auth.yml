@@ -1,0 +1,6 @@
+auth_google_start:
+    path: /google/start
+    controller: App\Controller\GoogleAuthController::start
+auth_google_check:
+    path: /google/check
+    controller: App\Controller\GoogleAuthController::check

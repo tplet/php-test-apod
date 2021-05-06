@@ -9,8 +9,11 @@ imports:
 parameters:
 
 services:
-    # default configuration for services in *this* file
-    _defaults:
-        autowire: true      # Automatically injects dependencies in your services.
-        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
+    # Google authenticator
+    app.security.google_authenticator:
+        class: App\Security\GoogleAuthenticator
+        arguments:
+            $clientRegistry: '@oauth2.registry'
+            $em: '@doctrine.orm.entity_manager'
+            $router: '@router'

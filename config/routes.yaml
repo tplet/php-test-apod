@@ -1,3 +1,11 @@
 index:
     path: /
     controller: App\Controller\HomeController::index
+
+auth:
+    prefix: /auth
+    resource: 'routes/auth.yml'
+
+restricted:
+    prefix: /restricted
+    resource: 'routes/restricted.yml'
