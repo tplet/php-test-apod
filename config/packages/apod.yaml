@@ -1,0 +1,4 @@
+apod:
+    api:
+        url: 'https://api.nasa.gov/planetary/apod'
+        api_key: 'fARtocReuhy4nL8nUQi8lXgKk7aqlGAUYJ9vMLKd'

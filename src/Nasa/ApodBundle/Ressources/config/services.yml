@@ -14,8 +14,8 @@ services:
     nasa.apod.api.apod:
         class: App\Nasa\ApodBundle\Services\ApodApiService
         arguments:
-            $url: 'https://api.nasa.gov/planetary/apod'
-            $api_key: 'fARtocReuhy4nL8nUQi8lXgKk7aqlGAUYJ9vMLKd'
+            $url: '%nasa.apod.api.apod.url%'
+            $api_key: '%nasa.apod.api.apod.api_key%'
             $apodDtoFactory: '@nasa.apod.factory.dto.media'
 
     # Business
