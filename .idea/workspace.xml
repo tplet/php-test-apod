@@ -11,79 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a9262a-96dd-42a2-b951-5bae765aec1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/services/controllers.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/ApodBundle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Command/BuildCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/DependencyInjection/ApodExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Entity/Media.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Entity/MediaInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Factory/DtoFactoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Factory/MediaDtoFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Factory/MediaFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Factory/MediaFactoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Model/Dto/DtoMedia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Model/Dto/DtoMediaInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Ressources/config/services.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Ressources/config/services/commands.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Ressources/config/services/factories.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Services/ApodApiService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Services/ApodApiServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Services/ApodService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Services/ApodServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Services/Repositories/MediaRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Services/Repositories/MediaRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/phpunit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/cache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/cache.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/debug.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/mailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/prod/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/prod/routing.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/test/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/test/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/preload.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/preload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/dev/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/dev/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nasa/ApodBundle/Services/ApodApiService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nasa/ApodBundle/Services/ApodApiService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +123,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="php.override.implement.member.chooser.php.doc" value="COPY_ALWAYS" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -212,8 +141,16 @@
       <option name="presentableId" value="Default" />
       <updated>1620211287189</updated>
       <workItem from="1620211295157" duration="1727000" />
-      <workItem from="1620213057427" duration="16554000" />
+      <workItem from="1620213057427" duration="16772000" />
     </task>
+    <task id="LOCAL-00001" summary="Step 1 and 2">
+      <created>1620291952719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620291952719</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +167,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Step 1 and 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 1 and 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="312" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620287195696">
@@ -256,6 +197,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="462" y="115" key="#com.jetbrains.php.refactoring.extract.interface.PhpExtractInterfaceDialog#/-1366.119.1366.738/0.0.1440.870/1440.0.1440.870@0.0.1440.870" timestamp="1620285038065" />
+    <state x="285" y="3" key="CommitChangelistDialog2" timestamp="1620291951148">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="285" y="3" key="CommitChangelistDialog2/-1366.119.1366.738/0.0.1440.870/1440.0.1440.870@0.0.1440.870" timestamp="1620291951148" />
     <state x="500" y="190" key="FileChooserDialogImpl" timestamp="1620287646359">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
@@ -312,10 +257,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="484" y="158" key="NewPhpClassDialog/-1366.119.1366.738/0.0.1440.870/1440.0.1440.870@0.0.1440.870" timestamp="1620287438172" />
-    <state x="221" y="80" key="SettingsEditor" timestamp="1620287225093">
+    <state x="221" y="80" key="SettingsEditor" timestamp="1620291981489">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="221" y="80" key="SettingsEditor/-1366.119.1366.738/0.0.1440.870/1440.0.1440.870@0.0.1440.870" timestamp="1620287225093" />
+    <state x="221" y="80" key="SettingsEditor/-1366.119.1366.738/0.0.1440.870/1440.0.1440.870@0.0.1440.870" timestamp="1620291981489" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1620212738766">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
