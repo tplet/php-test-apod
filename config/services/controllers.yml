@@ -1,0 +1,22 @@
+services:
+    App\Controller\HomeController:
+        calls:
+            - [setContainer, ['@service_container']]
+        tags:
+            - { name: 'controller.service_arguments' }
+
+    App\Controller\RestrictedController:
+        arguments:
+            $apodService: '@nasa.apod.apod.service'
+        calls:
+            - [setContainer, ['@service_container']]
+        tags:
+            - { name: 'controller.service_arguments' }
+
+    App\Controller\GoogleAuthController:
+        arguments:
+            $clientRegistry: '@oauth2.registry'
+        calls:
+            - [setContainer, ['@service_container']]
+        tags:
+            - { name: 'controller.service_arguments' }

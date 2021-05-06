@@ -1,0 +1,7 @@
+# Factories
+services:
+    nasa.apod.factory.dto.media:
+        class: App\Nasa\ApodBundle\Factory\MediaDtoFactory
+    nasa.apod.factory.media:
+        class: App\Nasa\ApodBundle\Factory\MediaFactory
+

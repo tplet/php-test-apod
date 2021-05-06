@@ -1,0 +1,27 @@
+imports:
+    - { resource: services/factories.yml }
+    - { resource: services/commands.yml }
+
+services:
+    #
+    # About all services files:
+    # - The explicit use of arguments makes it easier to understand the injected dependencies.
+    #   This is particularly true in the case of multi-layer architecture with different overloads.
+    # - For sure, using auto-wiring is another option.
+    #
+
+    # API
+    nasa.apod.api.apod:
+        class: App\Nasa\ApodBundle\Services\ApodApiService
+        arguments:
+            $url: '%nasa.apod.api.apod.url%'
+            $api_key: '%nasa.apod.api.apod.api_key%'
+            $apodDtoFactory: '@nasa.apod.factory.dto.media'
+
+    # Business
+    nasa.apod.apod.service:
+        class: App\Nasa\ApodBundle\Services\ApodService
+        arguments:
+            $entityManager: '@doctrine.orm.entity_manager'
+            $apodApiService: '@nasa.apod.api.apod'
+            $mediaFactory: '@nasa.apod.factory.media'

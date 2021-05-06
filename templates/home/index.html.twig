@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block body %}
+    <div style="text-align: center;">
+        <h1>Please login with your Google account</h1>
+        <a href="{{ path('auth_google_start') }}">Sign in with Google</a>
+    </div>
+{% endblock %}
