@@ -1,12 +1,22 @@
 ![Aperçu du rendu](screenshot.png)
 
+# Prerequisites
+
+* PHP >= 7.4
+* Check composer is installed to get all dependencies
+* MySQL, MariaDB or PostGreSQL server
+* Web server : Apache or Nginx 
+
 # Installation
 
-To use the application, it is necessary to configure the NASA API key. To do this, set the "api_key" option in the config/packages/apod.yaml file.
+* Clone repository
+* Execute `composer install` command
+* Configure the NASA API key : set the "api_key" option in the config/packages/apod.yaml file
+* Define the Google API keys in the .env file (see https://console.cloud.google.com/apis/credentials to define an APP and retrieve the associated keys)
+* Configure database in .env file
+Finally, dump env file with `composer dump-env dev` or `composer dump-env prod` command.
 
-It is also necessary to define the Google API keys in the .env file (see https://console.cloud.google.com/apis/credentials to define an APP and retrieve the associated keys).
-
-# Fetch picture and cron
+# Fetch picture day and cron
 
 The retrieval of the NASA data is done through a command line :
 php bin/console nasa:apod:build
