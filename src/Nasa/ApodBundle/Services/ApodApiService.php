@@ -6,7 +6,6 @@ namespace App\Nasa\ApodBundle\Services;
 
 use App\Nasa\ApodBundle\Factory\DtoFactoryInterface;
 use App\Nasa\ApodBundle\Model\Dto\DtoMediaInterface;
-use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
@@ -67,15 +66,10 @@ class ApodApiService extends Client implements ApodApiServiceInterface
 
         } catch (GuzzleException $e) {
             // TODO: Log exception. For now, trigger exception again.
-            print_r($e);
             throw $e;
         } catch (ClientExceptionInterface $e) {
-            print_r($e);
             // TODO: Log exception. For now, trigger exception again.
             throw $e;
-        } catch (Exception $e) {
-            print_r($e);
-
         }
     }
 
